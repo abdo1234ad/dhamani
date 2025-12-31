@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhamani Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="brand">Dhamani</div>
+      <nav class="nav-links">
+        <a href="index.html#game">Game</a>
+        <a href="index.html#features">Features</a>
+        <a href="login.html" aria-current="page">Login</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+        <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle__label">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="auth">
+    <div class="container auth__container">
+      <div class="auth__intro">
+        <p class="eyebrow">Welcome back</p>
+        <h1>Sign in to access your receipts</h1>
+        <p class="muted">Keep your warranties and receipts synced across devices. The experience is fully responsive and supports dark mode.</p>
+        <ul class="bullet-list">
+          <li>Mobile-first layout with generous tap targets.</li>
+          <li>Keyboard-accessible forms with clear focus states.</li>
+          <li>Reusable styles shared across the site.</li>
+        </ul>
+      </div>
+
+      <form class="auth__form card" aria-label="Login form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" required />
+        </div>
+        <div class="form-actions">
+          <label class="checkbox">
+            <input type="checkbox" name="remember" />
+            <span>Remember me</span>
+          </label>
+          <a class="link" href="#">Forgot password?</a>
+        </div>
+        <button class="button" type="submit">Sign in</button>
+        <p class="muted center">New here? <a class="link" href="#">Create an account</a></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p class="muted">Need help? Reach us anytime—our interface adapts to your device.</p>
+      <div class="footer-links">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#game">Game</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>

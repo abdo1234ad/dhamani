@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhamani Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="brand">Dhamani</div>
+      <nav class="nav-links">
+        <a href="#game">Game</a>
+        <a href="#features">Features</a>
+        <a href="login.html">Login</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+        <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle__label">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div>
+          <p class="eyebrow">Warranty & receipts manager</p>
+          <h1>Organize, track, and play while you manage your records.</h1>
+          <p class="lede">Stay productive with quick tools, responsive layouts, and a fun game to keep your reflexes sharp—all with built-in dark mode.</p>
+          <div class="hero__actions">
+            <a class="button" href="login.html">Go to Login</a>
+            <a class="button button--ghost" href="#game">Try the Game</a>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="panel-card">
+            <h2>Quick glance</h2>
+            <ul class="mini-stats">
+              <li>
+                <span class="label">Receipts</span>
+                <span class="value">124</span>
+              </li>
+              <li>
+                <span class="label">Warranties</span>
+                <span class="value">36</span>
+              </li>
+              <li>
+                <span class="label">Alerts</span>
+                <span class="value">2</span>
+              </li>
+            </ul>
+            <p class="muted">Built for all screens: resize the window or rotate your phone to see responsive grids adapt instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2>Responsive, accessible, and delightful</h2>
+          <p class="muted">Layouts scale fluidly from mobile to desktop with CSS grid and flexbox, ensuring every component stays usable.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="card">
+            <h3>Adaptive cards</h3>
+            <p>Content cards rearrange automatically using grid templates so information never overflows on smaller screens.</p>
+          </article>
+          <article class="card">
+            <h3>Navigation that fits</h3>
+            <p>The header compresses gracefully with wrap-friendly spacing and a persistent dark-mode toggle.</p>
+          </article>
+          <article class="card">
+            <h3>Keyboard friendly</h3>
+            <p>Game and form controls are focusable and work with keyboard input for inclusive accessibility.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="game" class="section section--alt">
+      <div class="container">
+        <div class="section__header">
+          <h2>Mini game: Chase the gem</h2>
+          <p class="muted">Use the arrow keys (or WASD) to move the player square. Catch the gem to score points—no libraries needed.</p>
+        </div>
+        <div class="game-layout">
+          <div class="game-panel">
+            <div class="game-stats">
+              <div>
+                <span class="label">Score</span>
+                <span class="value" data-score>0</span>
+              </div>
+              <div>
+                <span class="label">Best</span>
+                <span class="value" data-best>0</span>
+              </div>
+            </div>
+            <div class="game-board" data-game-board aria-label="Chase the gem game area">
+              <div class="player" data-player aria-label="Player" role="img" aria-roledescription="square"></div>
+              <div class="target" data-target aria-label="Gem" role="img" aria-roledescription="diamond"></div>
+            </div>
+            <div class="game-actions">
+              <button class="button button--ghost" type="button" data-reset-game>Reset</button>
+              <p class="muted">Tip: Hold multiple keys to move diagonally. Scores persist while you stay on the page.</p>
+            </div>
+          </div>
+          <div class="game-copy card">
+            <h3>Why a mini game?</h3>
+            <p>A quick micro-game helps users stay engaged while data loads or syncs. This one is intentionally lightweight and runs entirely on native browser APIs.</p>
+            <ul class="bullet-list">
+              <li>Responsive board that scales with the container.</li>
+              <li>Collision detection to track your catches.</li>
+              <li>Smooth animations with <code>requestAnimationFrame</code>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p class="muted">Dhamani keeps your warranties and receipts organized, wherever you are.</p>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
